@@ -1,3 +1,5 @@
+<h1> Pizzaria </h1>
+<h3> Aplicação desenvolvida em JAVA que tem como objetivo gerenciar os produtos de uma pizzaria. O gerenciamento consiste em: cadastrar os produtos (pizzas e refrigerantes), lista-los e deleta-los. </h3>
 <h2>🚀 Começando</h2>
 <p>Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.</p>
 <h3>📋 Pré-requisitos</h3>
@@ -19,3 +21,5 @@ A partir deste ponto, basta seguir as instruções fornecidas pelo programa.
 	<li> Guilherme Tavares - <a href="https://github.com/TavaresFrog" target="_blank">Desenvolvedor </a></li>
 	<li> Vitor Aguiar - <a href="https://github.com/Brokollis" target="_blank">Desenvolvedor Web</a></li>
 </ul>
+<h2>🚧 Em construção</h2>
+<p>O Programa está em construção, algumas funções podem não estar em sua plena funcionalidade.</p>
