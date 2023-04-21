@@ -12,8 +12,10 @@ public class Pizzaria {
             System.out.println("+-------------------------------------------------------+");
             System.out.println("| 1 - Cadastrar Pizza                                   |");
             System.out.println("| 2 - Listar Pizza                                      |");
-            System.out.println("| 3 - Cadastrar Refrigerante                            |");
-            System.out.println("| 4 - Listar Refrigerante                               |");
+            System.out.println("| 3 - Deletar Pizza                                     |");
+            System.out.println("| 4 - Cadastrar Refrigerante                            |");
+            System.out.println("| 5 - Listar Refrigerante                               |");
+            System.out.println("| 6 - Deletar Refrigerante                              |");
             System.out.println("| 0 - Sair da aplicação                                 |");
             System.out.println("+-------------------------------------------------------+");
 
@@ -36,12 +38,20 @@ public class Pizzaria {
                     listarPizzas();
                     break;
                 case 3:
+                    System.out.println("Deletar Pizza");
+                    deletarPizza(scanner);
+                    break;
+                case 4:
                     System.out.println("Cadastrar Refrigerante");
                     cadastraRefrigerante(scanner);
                     break;
-                case 4:
+                case 5:
                     System.out.println("Listar Refrigerante");
                     listarRefrigerantes();
+                    break;
+                case 6:
+                    System.out.println("Deletar Refrigerante");
+                    deletarRefrigerante(scanner);
                     break;
             }
         } while (optionMenu != 0);
@@ -323,6 +333,29 @@ public class Pizzaria {
 
         } else {
             System.out.println("Você não tem refrigerantes casdastrados!");
+        }
+    }
+
+    public static void deletarRefrigerante(Scanner scanner) {
+        System.out.println("Digite o ID do refrigerante que deseja deletar: ");
+        int idDeletarRefrigerante = scanner.nextInt();
+        try {
+            Refrigerantes.deletarRefrigerante(idDeletarRefrigerante);
+            System.out.println("O refrigerante foi deletado!");
+        } catch (Exception e) {
+            System.out.println("O refrigerante não foi encontrado.");
+        }
+
+    }
+
+    public static void deletarPizza(Scanner scanner) {
+        System.out.println("Digite o ID da pizza que deseja deletar: ");
+        int idDeletarPizza = scanner.nextInt();
+        try {
+            Pizzas.deletarPizza(idDeletarPizza);
+            System.out.println("A pizza foi deletada!");
+        } catch (Exception e) {
+            System.out.println("A pizza  não foi encontrada.");
         }
     }
 }

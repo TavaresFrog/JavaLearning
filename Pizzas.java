@@ -22,4 +22,19 @@ public class Pizzas {
         pizzas.add(this);
     }
 
+    public static Pizzas retornaPizzas(int idPizza) throws Exception {
+        // para cada obj (pizza) da classe (Pizzas) que está dentro do array (pizzas)
+        for (Pizzas pizza : pizzas) {
+            if (pizza.idPizza == idPizza) {
+                return pizza;
+            }
+        }
+        throw new Exception("Pizza não existe.");
+    }
+
+    // func tranforma em pizza na pizza que usuario digitou o id e remove
+    public static void deletarPizza(int idDeletarPizza) throws Exception {
+        Pizzas pizza = retornaPizzas(idDeletarPizza);
+        pizzas.remove(pizza);
+    }
 }

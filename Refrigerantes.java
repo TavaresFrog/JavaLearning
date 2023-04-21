@@ -18,4 +18,20 @@ public class Refrigerantes {
         refrigerantes.add(this);
     }
 
+    public static Refrigerantes retornaRefrigerante(int id) throws Exception {
+        for (Refrigerantes refrigerante : refrigerantes) {
+            if (refrigerante.idRefrigerante == id) {
+                return refrigerante;
+            }
+        }
+
+        throw new Exception("Refrigerante não encontrado");
+    }
+
+    public static void deletarRefrigerante(int idDeletarRefrigerante) throws Exception {
+        Refrigerantes refrigerante = retornaRefrigerante(idDeletarRefrigerante);
+        refrigerantes.remove(refrigerante);
+
+    }
+
 }
