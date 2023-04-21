@@ -16,6 +16,6 @@ A partir deste ponto, basta seguir as instruções fornecidas pelo programa.
 <p>O Programa está em sua primeira versão.</p>
 <h2>✒️ Autores</h2>
 <ul>
-	<li> Guilherme Tavares - <a href="https://github.com/TavaresFrog">Desenvolvedor </a></li>
-	<li> Vitor Aguiar - <a href="https://github.com/Brokollis">Desenvolvedor Web</a></li>
+	<li> Guilherme Tavares - <a href="https://github.com/TavaresFrog" target="_blank">Desenvolvedor </a></li>
+	<li> Vitor Aguiar - <a href="https://github.com/Brokollis" target="_blank">Desenvolvedor Web</a></li>
 </ul>
